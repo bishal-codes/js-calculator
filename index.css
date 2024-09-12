@@ -1,0 +1,143 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(202, 202, 202, 0.498);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.calculator-body {
+  height: 600px;
+  width: 400px;
+  background: linear-gradient(to bottom, #589cd3 0%, #71b7c03a 100%);
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.289);
+  position: relative;
+  padding: 20px;
+  display: grid;
+  /* justify-content: center; */
+  align-items: center;
+  backdrop-filter: blur(10px);
+}
+
+.display {
+  width: 355px;
+  height: 45px;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.btns {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 10px;
+}
+
+.btns > div {
+  background: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: -2px -2px 5px rgb(0, 0, 0);
+
+  transition: all 0.3s;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-ans {
+  grid-row: 4/6;
+  grid-column: 4/5;
+}
+
+.btn-zero {
+  grid-column: 2/4;
+}
+
+.units {
+  background: #000;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+}
+.units > h3 {
+  padding: 2px;
+}
+
+.units > div {
+  padding: 2px;
+  border: 1px solid white;
+}
+
+.pixels {
+  width: 300px;
+  background-color: green;
+  font-size: 16px;
+}
+
+.rem {
+  width: 20rem; /* 1rem = 16px, 10rem = 160px */
+  background-color: red;
+  font-size: 1rem;
+}
+
+.em {
+  width: 20em; /* 1em = 16px (parent font-size), if nearest  parent font-size is 25px, 1em = 25px */
+  background-color: blue;
+  font-size: 1em;
+}
+
+.percentage {
+  width: 50%;
+  background-color: rgb(172, 172, 106);
+  font-size: 1em;
+}
+
+.vh {
+  height: 10vh; /* 1vh = 1% of viewport height */
+  background-color: rgb(172, 172, 106);
+  font-size: 1em;
+}
+
+.vw {
+  width: 50vw; /* 1vw = 1% of viewport width */
+  background-color: rgb(172, 172, 106);
+  font-size: 1em;
+}
